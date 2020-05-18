@@ -8,6 +8,8 @@ const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 1200px;
+  margin: auto;
 `
 
 type Layout = {
