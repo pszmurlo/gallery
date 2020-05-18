@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
@@ -27,5 +28,13 @@ module.exports = {
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'react/prop-types': 'off', // We turn off prop-types rule, as we will use TypeScript's types instead.
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
   },
 }
