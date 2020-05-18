@@ -9,6 +9,7 @@ import Layout from '../../components/layout'
 const StyledPhoto = styled.img`
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  width: 100%;
 `
 
 const Container = styled.div`
